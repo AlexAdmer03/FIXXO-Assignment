@@ -12,7 +12,7 @@ header {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "logotype toggleicon"
-                             "menu menu";
+                            "menu menu";
         @include lg {
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-areas: "logotype menu menu";
@@ -58,13 +58,54 @@ header {
     }
 
 
-    #menu-icons {
+    #menu-icons .menu-icons{
         grid-area: menuicons;
-        margin-top: 40px;
-
+        justify-content: center;
+        margin-top: 2rem;
         @include lg {
             margin-top: 0;
         }
+    }
+
+    .menu-icons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        nav {
+            display: none;
+        }
+
+        .menu-link {
+            position: relative;
+            height: 36px;
+            width: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            color:#222529;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+            margin-left: 1rem;
+            transition: background-color 0.25s, color 0.20s;
+
+            &:hover,
+            &:active {
+            background-color: #222529;
+            color: #ffffff;
+            text-decoration: none;
+            }    
+
+        }
+    }
+
+
+    #menu {
+        grid-area: menu;
+        grid-template-areas: "menulinks"
+                             "menuicons";
     }
 
     .links {      
@@ -126,5 +167,37 @@ header {
         @include lg {
             display: none;
         }
+    }
+}
+
+@media (min-width: 992px) {
+    #toggle-icon {
+        display: none;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "logotype menu menu";
+    }
+
+    #menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "menulinks menuicons";
+    }
+
+    .menu-links {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-icons {
+        margin-top: 0;
+        justify-content: flex-end;
+    }
+
+    .menu-icons nav {
+        display: flex;
     }
 }

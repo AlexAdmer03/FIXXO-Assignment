@@ -15,10 +15,12 @@ $minmaxwidth-xxxl: 1680px;
         @content
     }
 }
+
 @mixin lg {
     @media (min-width: $minmaxwidth-lg) {
         @content
     }
+
 }
 @mixin xl {
     @media (min-width: $minmaxwidth-xl) {
