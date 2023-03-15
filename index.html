@@ -11,7 +11,7 @@
     <title>Fixxo.</title>
 </head>
 
-<body>
+<body onload="getNewProducts();">
     <header>
         <div class="container">
             <a id="logotype" class="logotype" href="index.html">FIXXO.</a>
@@ -279,6 +279,7 @@
       </div>
     </section>
 
+      <!-- referral page -->
       <div class="box-container">
 
         <a href="#">
@@ -290,7 +291,7 @@
       <div class="box2">
         <div class="box-border">
           <h1 class="referral-title1">50% Offers</h1>
-          <div class="referral-title2">Idag är dagen du kan hitta cok bra erbjudanden på utvalda varor för allt och alla! Minst 50% rabbatt på utvalda varor för dig, din vän, din mamma och din pappa. Handla nu!</div>
+          <p class="referral-title2">Idag är dagen du kan hitta cok bra erbjudanden på utvalda varor för allt och alla! Minst 50% rabbatt på utvalda varor för dig, din vän, din mamma och din pappa. Handla nu!</p>
           <a class="flash-sale-btn" href="#">FLASH SALE!</a>
         </div>
       </div>
@@ -300,12 +301,77 @@
           <img src="images/party-style.png" alt="party-style">
         </div>
       </a>
-      </div>  
+      </div> 
+      
+      <!-- product page -->
+      
+      <section class="product-page">
+        <div class="product-page-container">
+            <div class="big-picture1">
+             <h1 class="product-page-title1">2 FOR $29</h1>
+             <a class="product-page-btn1" href="#">SHOP NOW</a>
+            </div>
+
+              <div id="product-page-new-grid">
+                
+                
+                <div class="product-page-card">
+                  <a href="#">
+                  <div class="product-page-card-img">
+                      <img src="images/products/blue-set.png" alt="">
+                      <div class="product-page-card-menu"></div>
+                      
+                  </div>
+                </a>
+                  
+                  <div class="product-page-card-body">
+                  
+                    <p class="product-page-card-category">SET</p>
+                    <p class="product-page-card-title">Jeans & Hoodie Set</p>
+                    <div class="product-page-card-rating">
+                      <i class="fa-solid fa-sharp fa-star"></i>
+                      <i class="fa-solid fa-sharp fa-star"></i>
+                      <i class="fa-solid fa-sharp fa-star"></i>
+                      <i class="fa-regular fa-sharp fa-star"></i>
+                      <i class="fa-regular fa-sharp fa-star"></i>
+                    </div>
+                    <p class="product-page-card-price">$15.00</p>
+                  </div>
+                </div>
+             
+                
+                <div class="product-page-card">
+                  <a href="#">
+                  <div class="product-page-card-img">
+                      <img src="images/products/jeans-set.png" alt="">
+                      <div class="product-page-card-menu"></div>                        
+                  </div>
+                </a>
+                  <div class="product-page-card-body">
+                    <p class="product-page-card-category">SET</p>
+                    <p class="product-page-card-title">Jeans Set</p>
+                    <div class="product-page-card-rating">
+                      <i class="fa-solid fa-sharp fa-star"></i>
+                      <i class="fa-solid fa-sharp fa-star"></i>
+                      <i class="fa-solid fa-sharp fa-star"></i>
+                      <i class="fa-solid fa-sharp fa-star"></i>
+                      <i class="fa-regular fa-sharp fa-star"></i>
+                    </div>
+                    <p class="product-page-card-price">$15.00</p>
+                  </div>
+                </div>
+                
+              </div>
+          
+   
+          </div>
+      </section>
+      
 
 
 
     <div style="height: 200px;"></div>
     <button class="totop-arrow"><i class="fa-solid fa-arrow-up"></i></button>
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>

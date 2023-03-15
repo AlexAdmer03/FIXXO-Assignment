@@ -1,0 +1,171 @@
+.product-page-container {
+    margin-top: 60px;
+    display: flex;
+
+
+    .big-picture1 {
+        background-color: #BBBBBB;
+        width: 950px;
+        height: 650px;
+        margin-right: 20px;
+
+        .product-page-title1 {
+            display: flex;
+            justify-content: center;
+            margin: 225px;
+            color: white;
+        }
+
+        .product-page-btn1 {
+            display: flex;
+            justify-content: center;
+            bottom: 160px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+    }
+
+    #product-page-new-grid {
+        
+        display: grid;
+        grid-template-areas:
+            "product0 product1 product2"
+            "product3 product4 product5";
+        gap: 30px;
+
+        .product-card-image-container{
+            position: relative;
+            img {
+                width: 100%;
+                object-fit: cover; 
+            }
+        }
+        .product-card-category{
+            font-size: 16px;
+            font-weight: 500;
+            color: #616365;
+            margin-top: 15px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #616365;
+            margin-top: 10px;
+            
+        }
+        .product-card-title{
+            font-size: 20px;
+            font-weight: 700;
+            font-size: 16px;
+            font-weight: 700;
+            
+        }
+        .product-card-rating{
+            color: #ff7373;
+            font-size: 20px;
+            margin-top: 10px;
+            color: #ff7373;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        .product-card-price{
+            font-size: 22px;
+                font-weight: 700;
+                margin-top: 10px;
+                margin-bottom: 15px;
+                font-size: 18px;
+                font-weight: 700;
+                margin-top: 5px;
+                margin-bottom: 10px;
+        }
+
+        #product-0 {
+            grid-area: product0;
+        }
+
+        #product-1 {
+            grid-area: product1;
+        }
+
+        #product-2 {
+            grid-area: product2;
+        }
+
+        #product-3 {
+            grid-area: product3;
+        }
+
+        #product-4 {
+            grid-area: product4;
+        }
+
+        #product-5 {
+            grid-area: product5;
+        }
+
+        .product-page-card {
+            margin: 0;
+
+            p {
+                margin: 0;
+            }
+
+            .product-page-card-img {
+
+                position: relative;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+                
+                }
+                
+            }
+            .product-page-card-body {
+                text-align: center;
+            }
+            .product-page-card-category {
+                
+                font-size: 16px;
+                font-weight: 500;
+                color: #616365;
+                margin-top: 15px;
+                font-size: 13px;
+                font-weight: 500;
+                color: #616365;
+                margin-top: 10px;
+            }
+            .product-page-card-title {
+                
+                font-size: 20px;
+                font-weight: 700;
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            .product-page-card-rating {
+                
+                color: #ff7373;
+                font-size: 20px;
+                margin-top: 10px;
+                color: #ff7373;
+                font-size: 16px;
+                margin-top: 5px;
+                
+            }
+
+            .product-page-card-price {
+                
+                font-size: 22px;
+                font-weight: 700;
+                margin-top: 10px;
+                margin-bottom: 15px;
+                font-size: 18px;
+                font-weight: 700;
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+}    
