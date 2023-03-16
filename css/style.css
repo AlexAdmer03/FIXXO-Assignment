@@ -12,7 +12,7 @@ html, body {
   display: none;
 }
 
-#top-arrow {
+.totop-arrow {
   display: none;
   background-color: #ffffff;
   color: #222529;
@@ -25,7 +25,7 @@ html, body {
   border-radius: 50%;
   transition: background-color 0.25s, color 0.15s;
 }
-#top-arrow:hover {
+.totop-arrow:hover {
   background-color: #222529;
   color: #f5f5f5;
   border: 1px solid #222529;
@@ -908,4 +908,75 @@ header #toggle-icon {
   margin-top: 9px;
   font-size: 18px;
   font-weight: 500;
+}
+
+.footer-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container .line {
+  border: 1px solid #616365;
+  opacity: 0.4;
+  width: 60%;
+  margin: 50px;
+}
+
+.icon-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+.icon-flex .footer-card {
+  text-align: center;
+}
+.icon-flex .footer-card .position {
+  display: flex;
+  justify-content: center;
+}
+.icon-flex .footer-card .position .icon-holder {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.icon-flex .footer-card .position .icon-holder > i {
+  font-size: 30px;
+}
+.icon-flex .footer-card .footer-title {
+  font-weight: 700;
+}
+.icon-flex .footer-card .footer-desc {
+  margin-top: 10px;
+}
+
+.socials {
+  background-color: #f5f5f5;
+  margin-top: 50px;
+}
+.socials .line {
+  border: 1px solid #616365;
+  opacity: 0.4;
+  width: 100%;
+}
+.socials .socials-icons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.socials .socials-icons > i {
+  font-size: 18px;
+}
+.socials .copyright {
+  display: flex;
+  justify-content: center;
+  font-weight: 100;
+  font-size: small;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
