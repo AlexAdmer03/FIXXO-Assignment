@@ -11,7 +11,7 @@
     <title>Fixxo.</title>
 </head>
 
-<body onload="getNewProducts();">
+<body onload="getNewProducts(), getPopularProducts();">
     <header>
         <div class="container">
             <a id="logotype" class="logotype" href="index.html">FIXXO.</a>
@@ -27,12 +27,13 @@
                     <a class="menu-link" href="#"><i class="fa-regular fa-search"></i></a>
                     <a class="menu-link" href="#">
                         <i class="fa-regular fa-code-compare"></i>
-                        <span class="menu-badge">12</span>
+                        
                     </a>
-                    <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i>
+                      <span class="menu-badge">14</span></a>
                     <a class="menu-link" href="#">
                         <i class="fa-regular fa-bag-shopping"></i>
-                        <span class="menu-badge">12</span>
+                        <span class="menu-badge">3</span>
                     </a>
                 </nav>
             </div>
@@ -90,7 +91,7 @@
                 <i class="fa-regular fa-sharp fa-star"></i>
                 <i class="fa-regular fa-sharp fa-star"></i>
               </div>
-              <p class="product-card-price">$15.00</p>
+              <p class="product-card-price">150 SEK</p>
             </div>
           </div>
 
@@ -116,7 +117,7 @@
                 <i class="fa-regular fa-sharp fa-star"></i>
                 <i class="fa-regular fa-sharp fa-star"></i>
               </div>
-              <p class="product-card-price">$15.00</p>
+              <p class="product-card-price">200 SEK</p>
             </div>
           </div>
 
@@ -142,7 +143,7 @@
                 <i class="fa-solid fa-sharp fa-star"></i>
                 <i class="fa-solid fa-sharp fa-star"></i>
               </div>
-              <p class="product-card-price">$15.00</p>
+              <p class="product-card-price">350 SEK</p>
             </div>
           </div>
 
@@ -168,7 +169,7 @@
                 <i class="fa-regular fa-sharp fa-star"></i>
                 <i class="fa-regular fa-sharp fa-star"></i>
               </div>
-              <p class="product-card-price">$25.00</p>
+              <p class="product-card-price">250 SEK</p>
             </div>
           </div>
 
@@ -194,7 +195,7 @@
                 <i class="fa-solid fa-sharp fa-star"></i>
                 <i class="fa-solid fa-sharp fa-star"></i>
               </div>
-              <p class="product-card-price">$115.00</p>
+              <p class="product-card-price">1150 SEK</p>
             </div>
           </div>
 
@@ -220,7 +221,7 @@
                 <i class="fa-regular fa-sharp fa-star"></i>
                 <i class="fa-regular fa-sharp fa-star"></i>
               </div>
-              <p class="product-card-price">$35.00</p>
+              <p class="product-card-price">350 SEK</p>
             </div>
           </div>
 
@@ -246,7 +247,7 @@
                 <i class="fa-solid fa-sharp fa-star"></i>
                 <i class="fa-regular fa-sharp fa-star"></i>
               </div>
-              <p class="product-card-price">$215.00</p>
+              <p class="product-card-price">2150 SEK</p>
             </div>
           </div>
 
@@ -272,7 +273,7 @@
                 <i class="fa-regular fa-sharp fa-star"></i>
                 <i class="fa-regular fa-sharp fa-star"></i>
               </div>
-              <p class="product-card-price">$15.00</p>
+              <p class="product-card-price">200 SEK</p>
             </div>
           </div>
         </div>
@@ -309,7 +310,7 @@
         <div class="product-page-container">
             <div class="big-picture1">
              <h1 class="product-page-title1">2 FOR $29</h1>
-             <a class="product-page-btn1" href="#">SHOP NOW</a>
+             <a class="product-page-btn1" href="#">NEW PRODUCTS</a>
             </div>
 
               <div id="product-page-new-grid">
@@ -326,7 +327,7 @@
                   
                   <div class="product-page-card-body">
                   
-                    <p class="product-page-card-category">SET</p>
+                    <p class="product-page-card-category">Set</p>
                     <p class="product-page-card-title">Jeans & Hoodie Set</p>
                     <div class="product-page-card-rating">
                       <i class="fa-solid fa-sharp fa-star"></i>
@@ -335,7 +336,7 @@
                       <i class="fa-regular fa-sharp fa-star"></i>
                       <i class="fa-regular fa-sharp fa-star"></i>
                     </div>
-                    <p class="product-page-card-price">$15.00</p>
+                    <p class="product-page-card-price">150 SEK</p>
                   </div>
                 </div>
              
@@ -348,7 +349,7 @@
                   </div>
                 </a>
                   <div class="product-page-card-body">
-                    <p class="product-page-card-category">SET</p>
+                    <p class="product-page-card-category">Set</p>
                     <p class="product-page-card-title">Jeans Set</p>
                     <div class="product-page-card-rating">
                       <i class="fa-solid fa-sharp fa-star"></i>
@@ -357,7 +358,7 @@
                       <i class="fa-solid fa-sharp fa-star"></i>
                       <i class="fa-regular fa-sharp fa-star"></i>
                     </div>
-                    <p class="product-page-card-price">$15.00</p>
+                    <p class="product-page-card-price">350 SEK</p>
                   </div>
                 </div>
                 
@@ -366,8 +367,68 @@
    
           </div>
       </section>
-      
 
+      <section class="product-page2">
+        <div class="product-page-container2">
+          <div id="popular-products-grid">
+            
+            <div class="product-page-card2">
+              <a href="#">
+              <div class="product-page-card-img2">
+                  <img src="images/products/black-white-set.png" alt="">
+                  <div class="product-page-card-menu2"></div>
+                  
+              </div>
+            </a>
+              
+              <div class="product-page-card-body2">
+              
+                <p class="product-page-card-category2">Set</p>
+                <p class="product-page-card-title2">Black & White Set</p>
+                <div class="product-page-card-rating2">
+                  <i class="fa-solid fa-sharp fa-star"></i>
+                  <i class="fa-solid fa-sharp fa-star"></i>
+                  <i class="fa-regular fa-sharp fa-star"></i>
+                  <i class="fa-regular fa-sharp fa-star"></i>
+                  <i class="fa-regular fa-sharp fa-star"></i>
+                </div>
+                <p class="product-page-card-price2">250 SEK</p>
+              </div>
+            </div>
+         
+            
+            <div class="product-page-card2">
+              <a href="#">
+              <div class="product-page-card-img2">
+                  <img src="images/products/black-coat.png" alt="">
+                  <div class="product-page-card-menu2"></div>                        
+              </div>
+            </a>
+              <div class="product-page-card-body2">
+                <p class="product-page-card-category2">Coat</p>
+                <p class="product-page-card-title2">Black Coat</p>
+                <div class="product-page-card-rating2">
+                  <i class="fa-solid fa-sharp fa-star"></i>
+                  <i class="fa-solid fa-sharp fa-star"></i>
+                  <i class="fa-solid fa-sharp fa-star"></i>
+                  <i class="fa-solid fa-sharp fa-star"></i>
+                  <i class="fa-solid fa-sharp fa-star"></i>
+                </div>
+                <p class="product-page-card-price2">550 SEK</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="big-picture2">
+            <h1 class="product-page-title2">2 FOR $49</h1>
+            <a class="product-page-btn2" href="#">POPULAR PRODUCTS</a>
+           </div>
+        </div>
+      </section>
+      
+      <section class="footer">
+        
+      </section>
 
 
     <div style="height: 200px;"></div>
