@@ -37,3 +37,7 @@ $minmaxwidth-xxxl: 1680px;
         @content
     }
 }
+
+@mixin transition($property, $duration: 0.3s, $easing: ease) {
+    transition: $property $duration $easing;
+  }

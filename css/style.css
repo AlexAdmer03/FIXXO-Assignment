@@ -86,6 +86,22 @@ button {
   text-decoration: none;
 }
 
+.btn-theme-contact {
+  background-color: #ff7373;
+  color: #f5f5f5;
+  padding: 30px 7px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: background-color 0.25s;
+  position: relative;
+}
+.btn-theme-contact:hover {
+  background-color: #222529;
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
 .flash-sale-btn {
   background: #ffffff;
   padding: 20px 80px;
@@ -410,9 +426,6 @@ header #toggle-icon {
     display: flex;
   }
 }
-.featured-products {
-  margin-top: 40px;
-}
 .featured-products .container {
   max-width: 1110px;
 }
@@ -521,7 +534,7 @@ header #toggle-icon {
 }
 @media (min-width: 768px) {
   .featured-products .product-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   .featured-products .product-grid .product-card .product-card-img .menu-icons {
     top: 10px;
@@ -698,6 +711,47 @@ header #toggle-icon {
   left: 0px;
 }
 
+@media (max-width: 768px) {
+  .box-container {
+    display: block;
+  }
+  .office-style {
+    width: 390px;
+    height: 390px;
+  }
+  .box2 {
+    width: 390px;
+    height: 390px;
+    margin-bottom: 1em;
+    background: #f5f5f5;
+    padding: 1em;
+  }
+  .box2 .box-border {
+    border: 15px solid #ff7373;
+    width: 340px;
+    height: 340px;
+    margin: 10px;
+  }
+  .box2 .referral-title1 {
+    margin-top: 15px;
+    font-size: 50px;
+  }
+  .box2 .referral-title2 {
+    text-align: center;
+  }
+  .box2 .flash-sale-btn {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 19px;
+  }
+  .party-style {
+    width: 390px;
+    height: 390px;
+  }
+}
 .product-page-container {
   margin-top: 60px;
   display: flex;
@@ -910,8 +964,86 @@ header #toggle-icon {
   font-weight: 500;
 }
 
+@media (max-width: 768px) {
+  .product-page-container {
+    display: block;
+  }
+  .product-page-container .big-picture1 {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  .product-page-container .big-picture1 .product-page-title1 {
+    margin: 0;
+    text-align: center;
+    font-size: 65px;
+    padding-top: 75px;
+  }
+  .product-page-container .big-picture1 .product-page-btn1 {
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .product-page-container #product-page-new-grid {
+    margin-left: 10px;
+    display: grid;
+    grid-template-areas: "product0 product1" "product2 product3" "product4 product5";
+    gap: 10px;
+  }
+  .product-page-container #product-page-new-grid .product-card-image-container {
+    padding-top: 50px;
+  }
+  .product-page-container #product-page-new-grid .product-card-image-container img {
+    object-fit: contain;
+  }
+  .product-page-container #product-page-new-grid .product-page-card .product-page-card-img {
+    padding-top: 50px;
+  }
+  .product-page-container #product-page-new-grid .product-page-card .product-page-card-img img {
+    object-fit: contain;
+  }
+  .product-page-holder {
+    position: relative;
+    height: 1450px;
+  }
+  .product-page-holder .product-page-container2 {
+    display: block;
+  }
+  .product-page-holder .product-page-container2 .big-picture2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  .product-page-holder .product-page-container2 .big-picture2 .product-page-title2 {
+    margin: 0;
+    text-align: center;
+    font-size: 65px;
+    padding-top: 75px;
+  }
+  .product-page-holder .product-page-container2 .big-picture2 .product-page-btn2 {
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .product-page-holder .product-page-container2 #popular-products-grid {
+    position: absolute;
+    top: 400px;
+    margin: 0;
+    margin-left: 10px;
+    display: grid;
+    grid-template-areas: "product0 product1" "product2 product3" "product4 product5";
+    gap: 10px;
+  }
+  .product-page-holder .product-page-container2 #popular-products-grid .product-card-image-container img {
+    object-fit: contain;
+  }
+  .product-page-holder .product-page-container2 #popular-products-grid .product-page-card2 .product-page-card-img2 img {
+    object-fit: contain;
+  }
+}
 .footer-container {
-  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -979,4 +1111,98 @@ header #toggle-icon {
   font-size: small;
   margin-top: 25px;
   margin-bottom: 0;
+}
+
+.container {
+  width: 100%;
+}
+.container form input,
+.container form textarea {
+  padding: 18px 20px;
+  border: 1px solid #222529;
+}
+.container form .name-email {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+}
+.container form .name-email #name {
+  width: 100%;
+}
+.container form .name-email #email {
+  width: 100%;
+}
+.container form .contact-form-comments {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+}
+.container form .contact-form-comments #comments {
+  width: 100%;
+}
+.container form .btn-theme-contact {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.container form .error {
+  display: none;
+}
+.container .contact-title {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .container form {
+    display: block;
+  }
+  .container form input,
+  .container form textarea {
+    padding: 18px 20px;
+    border: 1px solid #222529;
+  }
+  .container form .name-email {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .container form .name-email #name {
+    width: 100%;
+  }
+  .container form .name-email #email {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .container form .contact-form-comments {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .container form .contact-form-comments #comments {
+    width: 100%;
+  }
+  .container form .btn-theme-contact {
+    justify-self: center;
+    width: 100%;
+    margin: 0;
+  }
+  .container form .error {
+    display: none;
+  }
+  .container .contact-title {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
 }

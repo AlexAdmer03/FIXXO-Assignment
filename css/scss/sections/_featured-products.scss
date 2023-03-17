@@ -1,5 +1,5 @@
 .featured-products{
-    margin-top: 40px;
+    
 
     .container {
         max-width: 1110px;
@@ -131,7 +131,7 @@
 
     @media (min-width: 768px) {
         .product-grid {
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
         }   
     
         .product-grid .product-card .product-card-img .menu-icons {

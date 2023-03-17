@@ -11,6 +11,8 @@ $font-weight-semibold: 600;
 $font-weight-bold: 700;
 $font-weight-black: 900;
 
+$font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
 @mixin default-font {
     font-size: 1em;
     font-weight: $font-weight-regular;

@@ -13,13 +13,13 @@
         <!-- header -->
         <header>
             <div class="container">
-                <a class="logotype" href="index.html">FIXXO.</a>
+                <a id="logotype" href="index.html">FIXXO.</a>
     
                 <div id="menu" class="collapse">
                     <nav id="menu-links" class="menu-links">
                         <a class="menu-link" href="index.html">Home</a>
                         <a class="menu-link" href="products.html">Products</a>
-                        <a class="menu-link" href="contact.html">Contacts</a>
+                        <a class="menu-link" href="/contacts.html">Contacts</a>
                     </nav>
                     
                     <nav id="menu-icons" class="menu-icons">
@@ -57,34 +57,47 @@
 
         <!-- google maps -->
         <section class="google-maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2043.8080835943726!2d18.132484717443848!3d59.18578689999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f7b9074a99c31%3A0x33fb23ace1ef639c!2sNordkapsv%C3%A4gen%201%2C%20136%2058%20Haninge!5e0!3m2!1ssv!2sse!4v1676467041988!5m2!1ssv!2sse" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d130346.63149894927!2d18.086727314843753!3d59.305133288154934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssv!2sse!4v1678986426226!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
 
         <!-- contact form -->
         <section class="contact-form">
             <div class="container">
-                <h1>Come in Contact with Us</h1>
+                <h1 class="contact-title">Come in Contact with Us</h1>
                 <form onsubmit="handleContactForm(event)">
-                    <div class="contact-form-name">
-                        <input id="name" name="name" type="text" placeholder="Your Name">
-                        <div class="error">You must provide a valid name</div>
-                    </div>
-                    <div  class="contact-form-email">
-                        <input id="email" name="email" type="email" placeholder="Your Mail">
-                        <div class="error">You must provide an valid e-mail address</div>
+                    <div class="name-email">
+                        <div class="contact-form-name">
+                            <input id="name" name="name" type="text" placeholder="Your Name">
+                            <div class="error">You must provide a valid name</div>
+                        </div>
+                        <div  class="contact-form-email">
+                            <input id="email" name="email" type="email" placeholder="Your Mail">
+                            <div class="error">You must provide an valid e-mail address</div>
+                        </div>
                     </div>
                     <div class="contact-form-comments">
                         <textarea id="comments" name="comments" placeholder="Comments"></textarea>
                         <div class="error">You must provide a comment</div>
                     </div>
                     
-                    <button class="btn-theme" type="submit">Post Comments</button>
+                    <button class="btn-theme-contact" type="submit">Post Comments</button>
                 </form>
             </div>
         </section>
 
-
+        <section class="socials">
+            <div class="line"></div>
+            <div class="socials-icons">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-google"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            
+            </div>
+            <h6 class="copyright">© 2023 Fixxo. All Rights Reserved</h6>
+          </section>
 
     <script src="js/script.js"></script>
 </body>
